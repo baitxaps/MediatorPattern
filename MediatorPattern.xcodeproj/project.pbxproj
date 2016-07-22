@@ -11,6 +11,7 @@
 		583E5FD41D3F71A70018F310 /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = 583E5FD31D3F71A70018F310 /* Purchase.m */; };
 		583E5FD71D3F71B50018F310 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = 583E5FD61D3F71B50018F310 /* Stock.m */; };
 		583E5FDA1D3F71BD0018F310 /* Sale.m in Sources */ = {isa = PBXBuildFile; fileRef = 583E5FD91D3F71BD0018F310 /* Sale.m */; };
+		589BBC5A1D422738001D71AE /* AbstractMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 589BBC591D422738001D71AE /* AbstractMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		583E5FD61D3F71B50018F310 /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
 		583E5FD81D3F71BD0018F310 /* Sale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sale.h; sourceTree = "<group>"; };
 		583E5FD91D3F71BD0018F310 /* Sale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sale.m; sourceTree = "<group>"; };
+		589BBC581D422738001D71AE /* AbstractMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMediator.h; sourceTree = "<group>"; };
+		589BBC591D422738001D71AE /* AbstractMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMediator.m; sourceTree = "<group>"; };
 		58D4D0CE1D40CED30065EB78 /* mdeiator_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mdeiator_pattern.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +71,7 @@
 		583E5FC51D3F67890018F310 /* MediatorPattern */ = {
 			isa = PBXGroup;
 			children = (
+				589BBC571D422718001D71AE /* AbstractClass */,
 				583E5FD11D3F718A0018F310 /* class */,
 				583E5FD01D3F71310018F310 /* sell class.png */,
 				58D4D0CE1D40CED30065EB78 /* mdeiator_pattern.png */,
@@ -87,6 +91,15 @@
 				583E5FD91D3F71BD0018F310 /* Sale.m */,
 			);
 			path = class;
+			sourceTree = "<group>";
+		};
+		589BBC571D422718001D71AE /* AbstractClass */ = {
+			isa = PBXGroup;
+			children = (
+				589BBC581D422738001D71AE /* AbstractMediator.h */,
+				589BBC591D422738001D71AE /* AbstractMediator.m */,
+			);
+			path = AbstractClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				583E5FD71D3F71B50018F310 /* Stock.m in Sources */,
+				589BBC5A1D422738001D71AE /* AbstractMediator.m in Sources */,
 				583E5FD41D3F71A70018F310 /* Purchase.m in Sources */,
 				583E5FDA1D3F71BD0018F310 /* Sale.m in Sources */,
 				583E5FC71D3F67890018F310 /* main.m in Sources */,
