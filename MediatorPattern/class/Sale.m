@@ -12,22 +12,33 @@
 
 @implementation Sale
 
+- (instancetype)initWihtMediator:(AbstractMediator *)mediator {
+    if (self = [super initWihtMediator:mediator]) {
+        
+    }
+    return self;
+}
+
 //  IBM
 - (void)sellIBMComputer:(NSInteger)number {
-
-    Stock *stock = [Stock new];
-    //
-    Purchase *purchase = [Purchase new];
     
-    if([stock getStockNumber]< number){
-        
-        [purchase buyIBMcomputer:number];
-        
-        NSLog(@"%ld",number);
-        
-        [stock decrease:number];
+    [super.mediator execute:@"sale.sell" object:number];
+    
+    NSLog(@"销售IBM电脑 %ld台",number);
 
-    }
+//    Stock *stock = [Stock new];
+//    //
+//    Purchase *purchase = [Purchase new];
+//    
+//    if([stock getStockNumber]< number){
+//        
+//        [purchase buyIBMcomputer:number];
+//        
+//        NSLog(@"%ld",number);
+//        
+//        [stock decrease:number];
+//
+//    }
 }
 
 - (NSInteger)getSaleStatus {
@@ -44,7 +55,11 @@
 
 
 - (void)offSale {
-    Stock *stock = [Stock new];
-    NSLog(@"折价销售IBM电脑 %ld 台", [stock getStockNumber]);
+    [super.mediator execute:@"sale.offsell" object:0];
+    
+    //Stock *stock = [Stock new];
+    //NSLog(@"折价销售IBM电脑 %ld 台", [stock getStockNumber]);
 }
+
+
 @end

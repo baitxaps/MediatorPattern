@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Purchase,Sale,Stock;
 
 @interface AbstractMediator : NSObject
 
+@property (nonatomic ,strong,readonly) Purchase *purchase;
+@property (nonatomic ,strong,readonly) Sale *sale;
+@property (nonatomic ,strong,readonly) Stock *stock;
+
+- (void)execute:(NSString *)str object:(NSInteger)cobj;
 @end

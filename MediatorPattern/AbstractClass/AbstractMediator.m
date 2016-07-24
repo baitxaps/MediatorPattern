@@ -7,9 +7,7 @@
 //
 
 #import "AbstractMediator.h"
-#import "Purchase.h"
-#import "Sale.h"
-#import "Stock.h"
+#import "MediatorPatternHeader.h"
 
 @interface AbstractMediator()
 
@@ -30,8 +28,21 @@
     return self;
 }
 
-- (void)execute:(NSString *)str object:(id)cobj {
-    
+- (void)execute:(NSString *)str object:(NSInteger)cobj {
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

@@ -9,6 +9,7 @@
 #import "Stock.h"
 #import "Purchase.h"
 #import "Sale.h"
+#import "AbstractMediator.h"
 
 @interface Stock()
 
@@ -25,32 +26,43 @@
     return self;
 }
 
+- (instancetype)initWihtMediator:(AbstractMediator *)media {
+    if (self = [super initWihtMediator:media]) {
+         _computerNumber = 100;
+    }
+    return self;
+}
+
 - (void)increase:(NSInteger )number {
     _computerNumber += number;
 
     NSLog(@"库存数量为:%ld", _computerNumber);
 }
 
-- (NSInteger)getStockNumber {
-    return _computerNumber;
-}
 
 - (void)decrease:(NSInteger)number {
     _computerNumber -= number;
 }
 
+
+- (NSInteger)getStockNumber {
+    return _computerNumber;
+}
+
+
 - (void)clearStock {
-    Purchase *purchase = [Purchase new];
-    
-    Sale *sale = [Sale new];
+//    Purchase *purchase = [Purchase new];
+//    
+//    Sale *sale = [Sale new];
     
     NSLog(@"清理存货数量为:%ld",_computerNumber);
     
-    // 要求折价销售
-    [sale offSale];
-    
-    // 要求采购人员不要采购
-    [purchase refuseBuyIBM];
+    [super.mediator execute:@"stock.clear" object:0];
+//    // 要求折价销售
+//    [sale offSale];
+//    
+//    // 要求采购人员不要采购
+//    [purchase refuseBuyIBM];
     
 }
 @end

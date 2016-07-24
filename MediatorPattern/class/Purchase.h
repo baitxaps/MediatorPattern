@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AbstactColleageu.h"
 
-@interface Purchase : NSObject
+@interface Purchase :AbstactColleageu
 
 - (void)buyIBMcomputer:(NSInteger)number;
 - (void)refuseBuyIBM ;

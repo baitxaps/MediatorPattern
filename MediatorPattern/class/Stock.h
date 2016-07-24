@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AbstactColleageu.h"
 
-@interface Stock : NSObject
+@interface Stock :AbstactColleageu
 
 - (void)increase:(NSInteger )number ;
 - (void)decrease:(NSInteger)number;

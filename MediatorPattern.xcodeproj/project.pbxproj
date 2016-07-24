@@ -12,6 +12,8 @@
 		583E5FD71D3F71B50018F310 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = 583E5FD61D3F71B50018F310 /* Stock.m */; };
 		583E5FDA1D3F71BD0018F310 /* Sale.m in Sources */ = {isa = PBXBuildFile; fileRef = 583E5FD91D3F71BD0018F310 /* Sale.m */; };
 		589BBC5A1D422738001D71AE /* AbstractMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 589BBC591D422738001D71AE /* AbstractMediator.m */; };
+		7790623C1D4499990078646C /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790623B1D4499990078646C /* Mediator.m */; };
+		7790623F1D44A0510078646C /* AbstactColleageu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7790623E1D44A0510078646C /* AbstactColleageu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,11 @@
 		589BBC581D422738001D71AE /* AbstractMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMediator.h; sourceTree = "<group>"; };
 		589BBC591D422738001D71AE /* AbstractMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractMediator.m; sourceTree = "<group>"; };
 		58D4D0CE1D40CED30065EB78 /* mdeiator_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mdeiator_pattern.png; sourceTree = "<group>"; };
+		7790623A1D4499990078646C /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		7790623B1D4499990078646C /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		7790623D1D44A0510078646C /* AbstactColleageu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstactColleageu.h; sourceTree = "<group>"; };
+		7790623E1D44A0510078646C /* AbstactColleageu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstactColleageu.m; sourceTree = "<group>"; };
+		779062401D44AF9C0078646C /* MediatorPatternHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediatorPatternHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,7 @@
 		583E5FC51D3F67890018F310 /* MediatorPattern */ = {
 			isa = PBXGroup;
 			children = (
+				779062391D4499770078646C /* extendx */,
 				589BBC571D422718001D71AE /* AbstractClass */,
 				583E5FD11D3F718A0018F310 /* class */,
 				583E5FD01D3F71310018F310 /* sell class.png */,
@@ -98,8 +106,20 @@
 			children = (
 				589BBC581D422738001D71AE /* AbstractMediator.h */,
 				589BBC591D422738001D71AE /* AbstractMediator.m */,
+				7790623D1D44A0510078646C /* AbstactColleageu.h */,
+				7790623E1D44A0510078646C /* AbstactColleageu.m */,
 			);
 			path = AbstractClass;
+			sourceTree = "<group>";
+		};
+		779062391D4499770078646C /* extendx */ = {
+			isa = PBXGroup;
+			children = (
+				7790623A1D4499990078646C /* Mediator.h */,
+				7790623B1D4499990078646C /* Mediator.m */,
+				779062401D44AF9C0078646C /* MediatorPatternHeader.h */,
+			);
+			path = extendx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,9 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7790623F1D44A0510078646C /* AbstactColleageu.m in Sources */,
 				583E5FD71D3F71B50018F310 /* Stock.m in Sources */,
 				589BBC5A1D422738001D71AE /* AbstractMediator.m in Sources */,
 				583E5FD41D3F71A70018F310 /* Purchase.m in Sources */,
+				7790623C1D4499990078646C /* Mediator.m in Sources */,
 				583E5FDA1D3F71BD0018F310 /* Sale.m in Sources */,
 				583E5FC71D3F67890018F310 /* main.m in Sources */,
 			);
