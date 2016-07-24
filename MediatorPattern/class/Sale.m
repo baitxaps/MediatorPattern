@@ -26,19 +26,21 @@
     
     NSLog(@"销售IBM电脑 %ld台",number);
 
-//    Stock *stock = [Stock new];
-//    //
-//    Purchase *purchase = [Purchase new];
-//    
-//    if([stock getStockNumber]< number){
-//        
-//        [purchase buyIBMcomputer:number];
-//        
-//        NSLog(@"%ld",number);
-//        
-//        [stock decrease:number];
-//
-//    }
+    /*
+    Stock *stock = [Stock new];
+    //
+    Purchase *purchase = [Purchase new];
+    
+    if([stock getStockNumber]< number){
+        
+        [purchase buyIBMcomputer:number];
+        
+        NSLog(@"%ld",number);
+        
+        [stock decrease:number];
+
+    }
+     */
 }
 
 - (NSInteger)getSaleStatus {

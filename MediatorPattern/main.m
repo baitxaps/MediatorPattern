@@ -25,15 +25,16 @@ int main(int argc, const char * argv[]) {
         Stock *stock = [[Stock alloc]initWihtMediator:mediator];
         [stock clearStock];
         
+        /*
+        Purchase *purchase = [Purchase new];
+        [purchase buyIBMcomputer :100];
         
-//        Purchase *purchase = [Purchase new];
-//        [purchase buyIBMcomputer :100];
-//        
-//        Sale *sale = [Sale new];
-//        [sale sellIBMComputer:1];
-//        
-//        Stock *stock = [Stock new];
-//        [stock clearStock];
+        Sale *sale = [Sale new];
+        [sale sellIBMComputer:1];
+        
+        Stock *stock = [Stock new];
+        [stock clearStock];
+         */
     }
     return 0;
 }

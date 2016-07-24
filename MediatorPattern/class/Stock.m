@@ -51,18 +51,22 @@
 
 
 - (void)clearStock {
-//    Purchase *purchase = [Purchase new];
-//    
-//    Sale *sale = [Sale new];
+
     
     NSLog(@"清理存货数量为:%ld",_computerNumber);
     
     [super.mediator execute:@"stock.clear" object:0];
-//    // 要求折价销售
-//    [sale offSale];
-//    
-//    // 要求采购人员不要采购
-//    [purchase refuseBuyIBM];
+    
+    /*
+    Purchase *purchase = [Purchase new];
+
+    Sale *sale = [Sale new];
+    // 要求折价销售
+    [sale offSale];
+    
+    // 要求采购人员不要采购
+    [purchase refuseBuyIBM];
+     */
     
 }
 @end
